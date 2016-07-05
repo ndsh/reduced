@@ -1,4 +1,4 @@
-# ![screenshot](reduced/screenshot.jpg)
+# ![screenshot](reduced_theme/screenshot.jpg)
 
 # Reduced Theme
 
