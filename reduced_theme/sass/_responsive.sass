@@ -1,0 +1,41 @@
+$phone-width: 480px
+$tablet-width: 768px
+$desktop-width: 992px
+=phone
+	@media (max-width: #{$phone-width})
+		@content
+=tablet
+	@media (max-width: #{$tablet-width})
+		@content
+=desktop
+	@media (max-width: #{$desktop-width})
+		@content
+
+///*==== MEDIA QUERIES
+
+
+// /* Small devices (tablets, 768px and up)
+
+// @media (max-width: 768px)
+// 	#top-header, .header-widget
+// 		display: block
+// 	.header-menu-wrapper
+// 		float: right
+// 	.footer-menu-wrapper
+// 		float: right
+// 		ul
+// 			margin-left: 10px
+// 	ol
+// 		margin-left: 10px
+
+
+// /* Medium devices (desktops, 992px and up)
+// @media (max-width: 992px)
+// 	#top-header ul, ol
+// 		margin-left: 10px
+// 	.header-menu li:first-child
+// 		padding-left: 20px
+
+
+// /* Large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px)
