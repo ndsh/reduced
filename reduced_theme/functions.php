@@ -5,21 +5,28 @@
  * @package WordPress
  * @subpackage Reduced
  */
+	$title_of_the_website = "Title of the Website";
 
 	if (function_exists('acf_add_options_page')){
 	    acf_add_options_page('Global Settings');
 	}
 
 	function post_type_projects() {
-	    register_post_type('collection',
+	    register_post_type('Arbeiten',
 	        array(
 	            'labels' => array(
-	                'name' => __( 'Collections' ),
-	                'singular_name' => __( 'Collection' )
+	                'name' => __( 'Arbeiten' ),
+	                'singular_name' => __( 'Arbeit' )
 	                ),
 	            'public' => true,
 	            'has_archive' => true,
-	            'rewrite' => array('slug' => 'collection')
+	            'rewrite' => array('slug' => 'arbeit'),
+	            // 'taxonomies' => array('arbeiten',),
+				'menu_position' => 2,
+				'supports' => array(
+					'title',
+					'revisions'
+				)
 	        )
 	    );
 	}

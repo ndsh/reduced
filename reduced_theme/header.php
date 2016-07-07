@@ -24,7 +24,7 @@ global $main_image;
         <div id="main" class="clearfix">
             <section class="section-header">
                 <!-- Logo -->
-                <div class="logo"><a href="<?php bloginfo('url'); ?>">Kristina Jagodić</a><div>
+                <div class="logo"><a href="<?php bloginfo('url'); ?>"><? echo get_bloginfo( "name" ) ?></a><div>
                     
                 <!-- Menu -->
                 <?php if (has_nav_menu('main-menu')) { ?>
@@ -43,12 +43,5 @@ global $main_image;
                 <?php } ?>
             </section><!-- /.section-header -->
 <!-- End Header. Begin Template Content -->
-
-<!--
-li ==  menu-item-has-children == wrapper-dropdown
-    <a>label</a>
--> ul.sub-menu -> == dropdown
-        li
--->
 
 <!-- menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40 -->

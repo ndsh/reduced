@@ -37,11 +37,16 @@
             <!-- <div class="container container-padding"> -->
             <article>
                 <ul>
-                    <li class="footer-text">&copy; <?php echo date('Y'); ?>&mdash;∞ <?php bloginfo(); ?>.COM</li>
+                    <li class="footer-text">&copy; <?php echo date('Y'); ?><sup>(+)</sup> <?php bloginfo(); ?></li>
                 </ul><!-- end .credit -->
             </article>
             <aside>
-                <p>Imprint</p>
+                <?
+                    $imprint_object = get_field('imprint', options);
+                    if(!empty($imprint_object)) {
+                        ?><a href="<? echo $imprint_object->guid ?>"><? echo $imprint_object->post_title ?></a><?
+                    }
+                ?>
             </aside>
         </section>
     </div>

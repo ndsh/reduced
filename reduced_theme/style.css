@@ -2,7 +2,7 @@
  * Theme URI: http://www.julian-h.de
  * Author: Julian-Anthony Hespenheide
  * Author URI: http://www.julian-h.de
- * Description: dis a clean and mean theme
+ * Description: Basic Template for developing Wordpress Themes
  * Version: 1.0
  */
 html {
@@ -30,7 +30,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
-  font-family: "Crimson Text" S;
+  font-family: "Crimson Text";
   font-weight: normal;
   margin-top: 0;
   padding: 0; }
@@ -135,11 +135,11 @@ p {
     .section-header .logo:last-child {
       margin-right: 0; }
     .section-header .logo a {
-      border-top: 2px solid transparent;
+      border-bottom: 1px solid transparent;
       opacity: 0.5;
       filter: alpha(opacity=50); }
       .section-header .logo a:hover {
-        border-top: 2px solid #000000;
+        border-bottom: 1px solid #000000;
         transition: all 0.3s ease;
         opacity: 1;
         filter: alpha(opacity=100); }
@@ -381,118 +381,6 @@ section.content.section-collection-single {
   .section-footer aside p {
     letter-spacing: 0.05em;
     text-transform: uppercase; }
-
-/* ----------------------------- */
-/*       DROP DOWN NAVI */
-/* ----------------------------- */
-.menu-item-has-children {
-  /* Size and position */
-  position: relative;
-  width: 200px;
-  margin: 0 auto;
-  /* Styles */
-  cursor: pointer;
-  outline: none; }
-  @media (max-width: 768px) {
-    .menu-item-has-children {
-      position: inherit; } }
-  .menu-item-has-children.active .sub-menu {
-    opacity: 1;
-    pointer-events: auto; }
-  .menu-item-has-children:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: -5px;
-    top: 50%;
-    margin-top: -3px;
-    border-width: 4px 4px 0 4px;
-    border-style: solid;
-    border-color: #000000 transparent; }
-  .menu-item-has-children .sub-menu {
-    /* Size & position */
-    position: absolute;
-    top: 100%;
-    left: -370px;
-    right: 0px;
-    width: 500px;
-    margin-top: 20px !important;
-    /* Styles */
-    transition: all 0.3s ease-out;
-    list-style: none;
-    text-align: right;
-    /* Hiding */
-    opacity: 0;
-    pointer-events: none; }
-    @media (max-width: 768px) {
-      .menu-item-has-children .sub-menu {
-        left: -386px;
-        margin-top: 10px !important; } }
-    .menu-item-has-children .sub-menu li {
-      margin: 0;
-      text-align: right;
-      display: block; }
-      .menu-item-has-children .sub-menu li a {
-        border: 0px;
-        text-decoration: none;
-        color: #333;
-        border-left: 0px solid;
-        background-color: #000000;
-        color: #ffffff;
-        padding: 10px;
-        transition: all 0.3s ease-out;
-        opacity: 1;
-        filter: alpha(opacity=100); }
-      .menu-item-has-children .sub-menu li:hover a {
-        border: 0px;
-        color: grey; }
-
-/* ----------------------------- */
-/*       FIXED ELEMENTS */
-/* ----------------------------- */
-#social {
-  position: fixed;
-  z-index: 110;
-  left: 20px;
-  bottom: 20px;
-  opacity: 0.5;
-  filter: alpha(opacity=50); }
-  @media (max-width: 768px) {
-    #social {
-      position: inherit;
-      max-width: 980px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: -50px;
-      margin-bottom: 100px; }
-      #social::after {
-        clear: both;
-        content: "";
-        display: table; }
-      #social ul {
-        float: left;
-        display: block;
-        margin-right: 2.3576515979%;
-        width: 100%;
-        text-align: center; }
-        #social ul:last-child {
-          margin-right: 0; }
-        #social ul li {
-          display: inline;
-          margin-left: 20px;
-          margin-right: 20px; }
-          #social ul li a {
-            font-size: 32px; } }
-  #social ul, #social li {
-    margin: 0;
-    padding: 0; }
-    #social ul a, #social li a {
-      font-size: 20px; }
-      #social ul a:hover, #social li a:hover {
-        color: red; }
-  #social li {
-    margin-bottom: 5px; }
 
 .background-img-cover {
   height: 200px;

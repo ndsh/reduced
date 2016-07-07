@@ -11,4 +11,5 @@ Features:
 * Advance Custom Fields Global Settings
 * Custom Post Types can be activated in Global Settings
 * Google Fonts in functions.php
+* Sticky Footer (http://mystrd.at/modern-clean-css-sticky-footer/)
 
